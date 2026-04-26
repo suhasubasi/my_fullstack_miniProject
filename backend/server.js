@@ -15,9 +15,11 @@ mongoose.connect(process.env.MONGO_URI)
 // routes
 const logRoutes = require('./routes/logRoutes');
 const activityRoutes = require('./routes/activityRoutes');
+const statsRoutes = require('./routes/statsRoutes');
 
 app.use('/api/logs', logRoutes);
 app.use('/api/activities', activityRoutes);
+app.use('/api/stats', statsRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
