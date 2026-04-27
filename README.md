@@ -53,3 +53,4 @@ Opens backend on port 5000 and frontend on port 5173.
 - `PUT /api/logs/:id` – update a log
 - `DELETE /api/logs/:id` – delete a log
 - `GET /api/activities` – get all activities with their category
+- `GET /api/stats` – get total hours, average mood and breakdown by category
