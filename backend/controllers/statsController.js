@@ -16,7 +16,13 @@ const getStats = async (req, res) => {
             ? (moodLogs.reduce((sum, l) => sum + l.mood, 0) / moodLogs.length).toFixed(1)
             : null;
 
-        res.json({ totalLogs, totalHours, averageMood });
+        const byCategory = {};
+        logs.forEach(l => {
+            const cat = l.activityId?.categoryId?.name || 'Unknown';
+            byCategory[cat] = (byCategory[cat] || 0) + l.duration;
+        });
+
+        res.json({ totalLogs, totalHours, averageMood, byCategory });
     } catch (err) {
         res.status(500).json({ error: 'Could not get stats' });
     }
