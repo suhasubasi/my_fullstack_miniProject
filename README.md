@@ -2,6 +2,8 @@
 
 A simple fullstack app to track what I do every day and see how I spend my time.
 
+**Problem:** I had no idea where my time was actually going each day, so I built this to log activities and see the patterns.
+
 ## Tech I used :
 
 - **Frontend:** React (Vite)
