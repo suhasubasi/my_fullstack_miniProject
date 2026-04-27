@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #eee;
+    padding: 20px;
+}
+
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #e94560;
+}
+
+/* form */
+.form-box {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 4px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #0f3460;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.form-buttons button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #e94560;
+    color: white;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #555;
+}
+
+/* table */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #0f3460;
+    color: #fff;
+    font-size: 14px;
+    width: 200px;
+}
+
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #16213e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.log-table th {
+    background-color: #0f3460;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: #e94560;
+}
+
+.log-table td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+.category-badge {
+    font-size: 13px;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background-color: #0f3460;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #e94560;
+    color: #fff;
+}
+
+.error {
+    color: #e94560;
+}
